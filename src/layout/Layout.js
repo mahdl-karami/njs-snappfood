@@ -11,13 +11,15 @@ const Layout = ({ children }) => {
       <div className="wrapper">
         <header>
           <nav className={nav}>
-            <Image src={snappfoodSvg} alt="snappfood logo"/>
+            <Link href={`/`}>
+              <Image src={snappfoodSvg} alt="snappfood logo" />
+            </Link>
             <ul className={buttons}>
               <li>
-                <Link href={`/`}>Menu</Link>
+                <Link href={`/menu`}>Menu</Link>
               </li>
               <li>
-                <Link href={`/`}>Categories</Link>
+                <Link href={`/categories`}>Categories</Link>
               </li>
             </ul>
           </nav>

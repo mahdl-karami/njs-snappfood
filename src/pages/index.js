@@ -32,7 +32,7 @@ const index = () => {
           <h2>Food Delivery and Takeout!</h2>
           <p className="lead">Snappfood is an online food ordering and delivery platform launched by Snapp in 2014. Meals are delivered by couriers using cars, scooters, bikes, or on foot.</p>
           <button className="btn btn-primary">
-            <Link href={`/category/all`}>See All</Link>
+            <Link href={`/categories/all`}>See All</Link>
           </button>
         </div>
         <Image src={bannerImg} width={500} height={370} alt="Banner Image" />
@@ -83,9 +83,15 @@ const index = () => {
       {/*//!  Site Map */}
       <h2 className="title">Ready For Order ? </h2>
       <div className={siteMap}>
-        <button className="btn">Menu</button>
-        <button className="btn">Categories</button>
-        <button className="btn">Discounts</button>
+        <button className="btn">
+          <Link href={`/menu`}>Menu</Link>
+        </button>
+        <button className="btn">
+          <Link href={`/categories`}>Categories</Link>
+        </button>
+        <button className="btn">
+          <Link href={`/categories/all?discount=true`}>Discounts</Link>
+        </button>
       </div>
     </>
   );
