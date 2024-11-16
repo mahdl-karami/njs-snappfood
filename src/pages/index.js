@@ -16,7 +16,10 @@ import Choice from "@/icons/Choice";
 import Clock from "@/icons/Clock";
 // import images
 import bannerImg from "/public/images/banner.png";
-
+// import icons
+import { MdRestaurantMenu } from "react-icons/md";
+import { BiSolidCategory } from "react-icons/bi";
+import { RiDiscountPercentFill } from "react-icons/ri";
 const index = () => {
   return (
     <>
@@ -83,15 +86,24 @@ const index = () => {
       {/*//!  Site Map */}
       <h2 className="title">Ready For Order ? </h2>
       <div className={siteMap}>
-        <button className="btn">
-          <Link href={`/menu`}>Menu</Link>
-        </button>
-        <button className="btn">
-          <Link href={`/categories`}>Categories</Link>
-        </button>
-        <button className="btn">
-          <Link href={`/categories/all?discount=true`}>Discounts</Link>
-        </button>
+        <Link href={`/menu`}>
+          <button className="btn">
+            <MdRestaurantMenu />
+            Menu
+          </button>
+        </Link>
+        <Link href={`/categories`}>
+          <button className="btn">
+            <BiSolidCategory />
+            Categories
+          </button>
+        </Link>
+        <Link href={`/categories/all?discount=true`}>
+          <button className="btn">
+            <RiDiscountPercentFill />
+            Discounts
+          </button>
+        </Link>
       </div>
     </>
   );

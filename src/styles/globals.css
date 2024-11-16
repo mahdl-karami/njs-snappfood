@@ -57,6 +57,7 @@ a {
 }
 /* buttons */
 .btn {
+  cursor: pointer;
   width: fit-content;
   background: transparent;
   border: none;

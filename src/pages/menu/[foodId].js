@@ -58,7 +58,7 @@ const FoodDetails = ({ params, food }) => {
               </div>
             ))}
           </div>
-          <button>Add to Cart</button>
+          <button className="btn btn-primary">Add to Cart</button>
         </div>
       </div>
     </div>

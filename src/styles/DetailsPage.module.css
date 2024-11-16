@@ -105,14 +105,9 @@
 
 .container button {
   width: 100%;
-  border: none;
-  background-color: var(--primary);
-  color: white;
-  padding: 15px;
-  font-size: 1.3rem;
-  border-radius: 10px;
-  cursor: pointer;
   margin-bottom: 100px;
+  cursor: pointer;
+  padding: 1.2rem;
 }
 
 @media (max-width: 900px) {
