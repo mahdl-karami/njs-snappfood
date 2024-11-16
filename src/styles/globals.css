@@ -1,0 +1,28 @@
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+  --primary: #ff00a6;
+  --secondary: #ebedf0;
+}
+
+body {
+  width: clamp(1x, 80%, 1200px);
+  margin: auto;
+  color: var(--foreground);
+  background: var(--background);
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
