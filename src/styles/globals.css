@@ -39,6 +39,7 @@ a {
   position: relative;
   width: fit-content;
   padding: 1rem 0 4px;
+  margin: 1rem 0 2rem;
 }
 .title-line::before {
   content: "";
