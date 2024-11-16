@@ -35,6 +35,20 @@ a {
   margin: 4rem 0 2rem;
   color: var(--primary);
 }
+.title-line {
+  position: relative;
+  width: fit-content;
+  padding: 1rem 0 4px;
+}
+.title-line::before {
+  content: "";
+  position: absolute;
+  width: calc(100% + 15px);
+  height: 4px;
+  background: var(--primary);
+  left: 0;
+  bottom: 0;
+}
 .lead {
   opacity: 70%;
   text-align: justify;
