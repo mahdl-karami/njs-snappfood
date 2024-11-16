@@ -1,0 +1,29 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+.buttons {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  font-size: 1.25em;
+}
+.buttons a {
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  border: solid 2px var(--primary);
+  color: var(--primary);
+  transition: all 0.2s linear;
+}
+.buttons a:hover {
+  background: var(--primary);
+  color: var(--background);
+}
+.footer {
+  background: var(--primary);
+  color: var(--background);
+  padding: 0.5rem 0;
+  margin-top: 0.5rem;
+}

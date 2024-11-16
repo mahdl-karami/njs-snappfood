@@ -6,8 +6,6 @@
 }
 
 body {
-  width: clamp(1x, 80%, 1200px);
-  margin: auto;
   color: var(--foreground);
   background: var(--background);
   overflow-x: hidden;
@@ -15,7 +13,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.wrapper {
+  width: clamp(200px, 80%, 1200px);
+  margin: auto;
+}
+section {
+  min-height: 85vh;
+}
 * {
   box-sizing: border-box;
   padding: 0;
