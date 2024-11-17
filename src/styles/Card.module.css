@@ -1,4 +1,4 @@
-.container {
+.card {
   display: flex;
   flex-direction: column;
   box-shadow: 0 0 25px #b9b9b957;
@@ -7,12 +7,13 @@
   position: relative;
 }
 
-.container img {
+.card img {
   width: 100%;
   border-radius: 5px;
+  text-transform: capitalize;
 }
 
-.details {
+.foodDetails {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -21,25 +22,25 @@
   margin: 22px 0;
 }
 
-.details h4 {
-  color: var(--primary);
-  font-weight: 500;
+.foodDetails h3 {
+  color: var(--foreground);
+  font-weight: 600;
   font-size: 1rem;
 }
 
-.price {
+.foodPrice {
   display: flex;
   justify-content: left !important;
   align-items: center;
 }
 
-.container a {
+.card a {
   width: 100%;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 0.5rem;
 }
 
-.discount {
+.foodDiscount {
   color: #ed4133;
 }
 
