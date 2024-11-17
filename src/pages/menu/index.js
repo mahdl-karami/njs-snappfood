@@ -1,35 +1,29 @@
+// import components
 import Card from "@/components/Card";
-import Head from "next/head";
-import React from "react";
-import styles from "@/styles/Menu.module.css";
-const { menu } = styles;
+// import modules
+import DocumentHead from "@/modules/DocumentHead";
+// import styles
+import { menu } from "@/styles/Menu.module.css";
 
-const Menu = ({ data }) => {
+const Menu = ({ foods }) => {
   return (
     <>
-      {/*//? Page Head */}
-      <Head>
-        <title>SnappFood | Menu</title>
-        <link rel="icon" type="image/png" href="/favicon.png" />
-      </Head>
-      {/* //! Menu */}
-      <div>
-        <h2 className="title-line">Menu</h2>
-        <div className={menu}>
-          {data.map((item) => (
-            <Card item={item} />
-          ))}
-        </div>
+      <DocumentHead title="SnappFood | Menu" />
+      <h2 className="title-line">Menu</h2>
+      <div className={menu}>
+        {foods.map((item) => (
+          <Card item={item} />
+        ))}
       </div>
     </>
   );
 };
 
 export async function getStaticProps() {
-  const data = await fetch(`http://localhost:3003/data`).then((res) => res.json());
+  const foods = await fetch(`http://localhost:3003/data`).then((res) => res.json());
   return {
     props: {
-      data,
+      foods,
     },
   };
 }
