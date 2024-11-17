@@ -20,6 +20,7 @@ import bannerImg from "/public/images/banner.png";
 import { MdRestaurantMenu } from "react-icons/md";
 import { BiSolidCategory } from "react-icons/bi";
 import { RiDiscountPercentFill } from "react-icons/ri";
+
 const index = () => {
   return (
     <>

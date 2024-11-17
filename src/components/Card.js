@@ -1,6 +1,8 @@
+// import components
 import Dollar from "@/icons/Dollar";
 import Location from "@/icons/Location";
 import Link from "next/link";
+// import styles
 import styles from "@/styles/Card.module.css";
 
 const Card = ({ item }) => {

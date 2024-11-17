@@ -1,13 +1,16 @@
 // import svg/image
 import Image from "next/image";
-import snappfoodSvg from "./snappfood.svg";
+import snappfoodSvg from "/public/snappfood.svg";
 // import styles
 import styles from "@/styles/Layout.module.css";
-import Link from "next/link";
 const { nav, buttons, footer } = styles;
+// import components
+import Link from "next/link";
+
 const Layout = ({ children }) => {
   return (
     <>
+      {/* //! Header */}
       <div className="wrapper">
         <header>
           <nav className={nav}>
@@ -25,7 +28,9 @@ const Layout = ({ children }) => {
           </nav>
         </header>
       </div>
+      {/* //! Center */}
       <section className="wrapper">{children}</section>
+      {/* //! Footer */}
       <footer className={footer}>
         <div className="wrapper">
           <h4>
