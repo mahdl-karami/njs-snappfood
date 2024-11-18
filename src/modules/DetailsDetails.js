@@ -2,7 +2,6 @@
 import { list } from "@/styles/DetailsPage.module.css";
 
 const DetailsDetails = ({ details }) => {
-  console.log(details);
   return (
     <>
       <h3 className="title">Details</h3>

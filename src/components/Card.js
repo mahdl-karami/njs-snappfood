@@ -9,11 +9,11 @@ const Card = ({ item }) => {
   const { id, name, price, details, discount } = item;
 
   return (
-    <div className={card}>
+    <>
       <img src={`/images/${id}.jpeg`} alt={name + " image"} />
       <div className={foodDetails}>
         <h3>{name}</h3>
-        <div>
+        <div className="lead">
           <Location />
           {details[0].Cuisine}
         </div>
@@ -30,10 +30,10 @@ const Card = ({ item }) => {
         )}
         {discount ? <div className={badge}>{discount}%</div> : null}
       </div>
-      <Link href={`/menu/${id}`} className="btn btn-primary">
+      <Link href={`/menu/${id}`} className="btn btn-primary full-width">
         See Details
       </Link>
-    </div>
+    </>
   );
 };
 

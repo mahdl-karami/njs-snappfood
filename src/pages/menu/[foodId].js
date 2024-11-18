@@ -16,7 +16,7 @@ const FoodDetails = ({ food }) => {
       <DetailsDetails details={details} />
       <DetailsIngredients ingredients={ingredients} />
       <DetailsRecipe recipe={recipe} />
-      <button className="btn btn-primary btn-full" style={{ marginBottom: "100px" }}>
+      <button className="btn btn-primary full-width" style={{ marginBottom: "100px" }}>
         Add to Cart
       </button>
     </>

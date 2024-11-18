@@ -1,55 +1,45 @@
 .card {
   display: flex;
   flex-direction: column;
-  box-shadow: 0 0 25px #b9b9b957;
-  padding: 10px;
+  box-shadow: 0 0 25px #b9b9b999;
+  padding: 0.5rem;
   border-radius: 10px;
   position: relative;
 }
-
 .card img {
   width: 100%;
   border-radius: 5px;
   text-transform: capitalize;
 }
-
 .foodDetails {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  color: grey;
-  font-size: 0.85rem;
-  margin: 22px 0;
+  font-size: 0.85em;
+  margin: 0.5rem 0;
 }
-
 .foodDetails h3 {
   color: var(--foreground);
   font-weight: 600;
   font-size: 1rem;
 }
-
 .foodPrice {
   display: flex;
-  justify-content: left !important;
   align-items: center;
+  font-weight: 600;
 }
-
 .card a {
-  width: 100%;
-  text-align: center;
-  margin-top: 0.5rem;
+  margin: 1rem 0;
 }
-
 .foodDiscount {
-  color: #ed4133;
+  color: var(--danger);
 }
-
 .badge {
-  background-color: #ed4133;
-  color: white;
+  background-color: var(--danger);
+  color: var(--background);
   padding: 4px;
   border-radius: 5px;
-  border: 3px solid white;
+  border: 3px solid var(--background);
   position: absolute;
   top: 15px;
   left: 15px;

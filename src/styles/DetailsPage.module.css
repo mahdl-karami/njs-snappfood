@@ -19,7 +19,6 @@
   display: flex;
   align-items: center;
 }
-
 .foodDiscount {
   background-color: var(--danger);
   color: var(--background);
@@ -29,7 +28,6 @@
   align-items: center;
   border-radius: 5px;
 }
-
 .list {
   list-style-position: inside;
   font-size: 1.3em;
@@ -41,24 +39,20 @@
 .list li span {
   font-size: 0.8em;
 }
-
 .recipeList {
   margin-bottom: 100px;
   border: var(--light-primary) 1px solid;
 }
-
 .recipeList div {
   display: flex;
   align-items: center;
   padding: 20px 10px;
   text-align: justify;
 }
-
 .recipeList span {
   font-size: 2rem;
   margin: 0 15px 0 5px;
 }
-
 .even {
   background-color: var(--light-primary);
 }
