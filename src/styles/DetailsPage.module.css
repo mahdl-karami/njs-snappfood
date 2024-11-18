@@ -1,133 +1,64 @@
 .banner {
   display: flex;
+  gap: 30px;
 }
-
 .banner img {
   width: 300px;
   border-radius: 10px;
 }
-
-.banner div {
-  margin-left: 30px;
-}
-
 .banner h3 {
   font-size: 1.3rem;
   color: var(--primary);
 }
-
+.banner div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .banner span {
   display: flex;
   align-items: center;
 }
 
-.location {
-  color: grey;
-  margin: 20px 0 40px;
-}
-
-.discount {
-  background-color: #ed4133;
-  color: white;
+.foodDiscount {
+  background-color: var(--danger);
+  color: var(--background);
   padding: 10px 0;
   display: flex;
   justify-content: center;
-  border-radius: 5px;
-  margin-top: 20px;
-}
-
-.introduction {
-  margin: 3.5rem 0;
-}
-
-.details {
-  margin-bottom: 60px;
-}
-
-.details h4 {
-  font-size: 1.5rem;
-}
-
-.details ul {
-  list-style: none;
-}
-
-.details li {
-  display: flex;
   align-items: center;
-  margin: 10px 0;
+  border-radius: 5px;
 }
 
-.details li::before {
-  content: "• ";
+.list {
+  list-style-position: inside;
+  font-size: 1.3em;
+  line-height: 1.4;
+}
+.list li::marker {
   color: var(--primary);
 }
-
-.details p {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin: 0 10px;
+.list li span {
+  font-size: 0.8em;
 }
 
-.details span {
-  color: grey;
-}
-
-.recipe {
+.recipeList {
   margin-bottom: 100px;
+  border: var(--light-primary) 1px solid;
 }
 
-.recipe h4 {
-  font-size: 1.5rem;
-  color: var(--primary);
-  margin: 24px 0;
-}
-
-.recipe div {
+.recipeList div {
   display: flex;
   align-items: center;
   padding: 20px 10px;
   text-align: justify;
 }
 
-.recipe span {
+.recipeList span {
   font-size: 2rem;
   margin: 0 15px 0 5px;
 }
 
-.odd {
-  background-color: #e8ffdb;
-}
-
 .even {
-  background-color: #bcff93;
-}
-
-.container button {
-  width: 100%;
-  margin-bottom: 100px;
-  cursor: pointer;
-  padding: 1.2rem;
-}
-
-@media (max-width: 900px) {
-  .container {
-    padding: 20px;
-  }
-}
-
-@media (max-width: 600px) {
-  .container {
-    padding: 10px;
-  }
-  .banner {
-    flex-direction: column;
-  }
-  .banner div {
-    margin: 0;
-  }
-  .banner img {
-    width: 100%;
-    margin-bottom: 20px;
-  }
+  background-color: var(--light-primary);
 }

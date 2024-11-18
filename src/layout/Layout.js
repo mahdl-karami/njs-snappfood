@@ -11,8 +11,8 @@ const Layout = ({ children }) => {
   return (
     <>
       {/* //! Header */}
-      <div className="wrapper">
-        <header>
+      <header>
+        <div className="wrapper">
           <nav className={nav}>
             <Link href={`/`}>
               <Image src={snappfoodSvg} alt="snappfood logo" />
@@ -26,8 +26,8 @@ const Layout = ({ children }) => {
               </li>
             </ul>
           </nav>
-        </header>
-      </div>
+        </div>
+      </header>
       {/* //! Center */}
       <section className="wrapper">{children}</section>
       {/* //! Footer */}

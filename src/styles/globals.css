@@ -3,6 +3,8 @@
   --foreground: #000000;
   --primary: #ff00a6;
   --secondary: #ebedf0;
+  --danger: #ff1500d8;
+  --light-primary: #ff00a694;
 }
 
 body {
@@ -74,4 +76,7 @@ a {
   background: var(--primary);
   color: var(--background);
   border: 2px solid var(--primary);
+}
+.btn-full {
+  width: 100%;
 }
