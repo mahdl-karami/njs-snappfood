@@ -1,0 +1,15 @@
+.searchbox {
+  display: flex;
+  gap: 1rem;
+}
+.searchbox select {
+  text-transform: capitalize;
+  box-shadow: 0 0 25px #b9b9b957;
+  color: var(--primary);
+}
+.img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 6rem 0;
+}
