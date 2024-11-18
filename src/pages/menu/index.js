@@ -23,7 +23,7 @@ const Menu = ({ foods }) => {
 };
 
 export async function getStaticProps() {
-  const foods = await fetch(`http://localhost:3003/data`).then((res) => res.json());
+  const foods = await fetch(`${process.env.BASE_URL}/data`).then((res) => res.json());
   return {
     props: {
       foods,

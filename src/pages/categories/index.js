@@ -31,7 +31,7 @@ const Categories = ({ queries, foods }) => {
 };
 
 export async function getServerSideProps(context) {
-  const foods = await fetch(`http://localhost:3003/data`).then((res) => res.json());
+  const foods = await fetch(`${process.env.BASE_URL}/data`).then((res) => res.json());
   return {
     props: {
       queries: context.query,

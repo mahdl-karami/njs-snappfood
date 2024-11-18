@@ -24,7 +24,7 @@ const FoodDetails = ({ food }) => {
 };
 
 export async function getStaticProps({ params }) {
-  const data = await fetch(`http://localhost:3003/data`).then((res) => res.json());
+  const data = await fetch(`${process.env.BASE_URL}/data`).then((res) => res.json());
   const food = await data.filter((item) => item.id == params.foodId);
   return {
     props: {
@@ -35,7 +35,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const data = await fetch(`http://localhost:3003/data`).then((res) => res.json());
+  const data = await fetch(`${process.env.BASE_URL}/data`).then((res) => res.json());
   const paths = data.map((item) => ({
     params: {
       foodId: item.id.toString(),
