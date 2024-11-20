@@ -24,7 +24,7 @@ const HomeSiteMap = () => {
             Categories
           </button>
         </Link>
-        <Link href={`/categories/all?discount=true`}>
+        <Link href={`/categories/discounts`}>
           <button className="btn">
             <RiDiscountPercentFill />
             Discounts
