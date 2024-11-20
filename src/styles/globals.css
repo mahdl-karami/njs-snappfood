@@ -83,3 +83,9 @@ a {
 .full-width {
   width: 100%;
 }
+/* responsive */
+@media only screen and (max-width: 1000px) {
+  .wrapper {
+    width: 90%;
+  }
+}
