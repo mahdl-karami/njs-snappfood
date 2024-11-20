@@ -13,3 +13,16 @@
   justify-content: center;
   margin: 6rem 0;
 }
+/* responsive */
+@media only screen and (max-width: 650px) {
+  .searchbox select,
+  .searchbox button {
+    font-size: 1em;
+    padding: 0.3rem 0.7rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .searchbox {
+    gap: 0.5rem;
+  }
+}

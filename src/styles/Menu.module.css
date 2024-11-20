@@ -9,3 +9,35 @@
     ". . ."
     ". . .";
 }
+/* responsive */
+@media only screen and (max-width: 850px) {
+  .menu {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5vw;
+    grid-template-areas:
+      ". ."
+      ". ."
+      ". .";
+  }
+}
+@media only screen and (max-width: 850px) {
+  .menu {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      ". ."
+      ". ."
+      ". .";
+  }
+}
+@media only screen and (max-width: 550px) {
+  .menu {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "."
+      "."
+      ".";
+  }
+}

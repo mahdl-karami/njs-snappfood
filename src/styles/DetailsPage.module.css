@@ -56,3 +56,28 @@
 .even {
   background-color: var(--light-primary);
 }
+/* responsive */
+@media only screen and (max-width: 650px) {
+  .banner img {
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .banner {
+    position: relative;
+    flex-direction: column;
+  }
+  .banner img {
+    width: 100%;
+  }
+  .banner div {
+    gap: 15px;
+  }
+  .foodDiscount {
+    position: absolute;
+    padding: 0.3rem 0.7rem;
+    border: 2px var(--background) solid;
+    top: 10px;
+    left: 10px;
+  }
+}
